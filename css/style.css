@@ -22,6 +22,11 @@ h1.mainH1 {
     width: 100%;
 
 }
+.hero .blackSpan {
+    padding:2px 12px 5px;
+    display: inline-block;
+    margin: 2px 0;
+}
 .hero .two-thirds {
     background: url(../images/portfolio.svg) 105% -5px no-repeat, url(../images/plus-line.svg) top right no-repeat;
     background-size: 38%, auto;
@@ -124,6 +129,7 @@ h2.h2 {
     border-radius: 0;
     line-height: 16px;
     margin: 0;
+    color: #000000;
 }
 .filter button:hover, .filter button:active, .filter button:focus, .filter :target, .filter .selected {
     background: #87FF00;
@@ -169,10 +175,19 @@ ul {
     padding: 20px;
     box-sizing: border-box;
     font-family: 'Open Sans', Arial, Helvetica, sans-serif;
-    min-height: 135px;
+    min-height: 120px;
     display: flex;
     align-items: center;
-    font-size: 1.5em;
+    font-size: 1.2em;
+    font-weight: bold;
+    border-top: 10px solid #87FF00;
+}
+.feed-item-title a {
+    color: #000000;
+    text-decoration: none;
+}
+.feed-item-title a:hover {
+    text-decoration: underline;
 }
 
 .articles hr {
@@ -299,5 +314,18 @@ footer span {
     }
     .articles span.blackSpan {
         border-right: 0 none;
+    }
+    footer .container {
+        display: block;
+    }
+    footer .socials ul {
+        display: flex;
+        justify-content: space-around;
+    }
+    footer a.footerlink {
+        font-size: 1.2em;
+    }
+    footer .seven {
+        padding: 0 20px;
     }
   }
