@@ -1,5 +1,5 @@
 
-
+// START FUNCTION //
 $(function(){
     $(window).bind("resize",function(){
      if($(this).width() >768){
@@ -82,6 +82,11 @@ $(function(){
         $('button').removeClass('selected');
         $(this).addClass('selected');
     });
- 
+
+ // ---------------------------------------------- //
+
+ $( "#article .feed-item-title" ).addClass( "one-third column" );
+// END FUNCTION //
 });
+
  
